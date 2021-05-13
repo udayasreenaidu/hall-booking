@@ -14,15 +14,13 @@ def home(request):
 def about(request):
 	return render(request,'html/about.html')
 
+def search(request):
+	return render(request,'html/search.html')
+
 def contact(request):
 	return render(request,'html/contact.html')
 
-def admin(request):
-	if request.method == "POST":
-		p= usrg(request.POST)
-		if p.is_valid():
-			p.save()
-			return redirect('/admin')
+
 
 def register(request):
 	if request.method == "POST":

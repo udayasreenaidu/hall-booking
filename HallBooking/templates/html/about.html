@@ -1,11 +1,56 @@
 {% extends 'html/base.html' %}
-{% block title %} Aboutus {% endblock %}
+{% block title %}About{% endblock %}
 {% block content %}
-<div class="container">
-  <div class="jumbotron mt-2">
-    <h1>About Page</h1>
-  </div>
+{% load static %}
+<br>
+
+<div class="container p-3 my-3 bg-secondary text-white">
+
+<div>
+<h1 class="text-center text-white bg-success border rounded p-2 my-2">VENUE FOR YOU</h1>
+<br>
+<p>In this project, we develop a online hall booking management system website.
+This web portable is used to check the availability of function halls hence we
+need not go and visit the place. The user can avoid spending his / her time and the
+money to search for hall. The main objective of the hall booking management
+system is to manage the details of payment, booking, customers and hall.
+It tracks all the details about the Booking Customers Hall. Provides the searching
+facilities based on various factors. Such as Payment, Booking, Customers, Hall.
+Manage the information of Booking Dates.</p>
+<br>
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+</ul>
+
+<!-- The slideshow -->
+<div class="container p-3 my-3 bg-info text-white">
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="{% static 'img/slide/image2.jpg' %}" class="mx-auto d-block" style="width:50%">
 </div>
+             
+             <div class="carousel-item">
+              <img src="{% static 'img/slide/image1.jpg' %}" class="mx-auto d-block" style="width:50%">
+             </div>
+             <div class="carousel-item">
+              <img src="{% static 'img/slide/image3.jpg' %}" alt="" class="mx-auto d-block" style="width:50%">
+             </div>
+         </div>
+
+         <!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+         </a>
+     </div></div>
 {% endblock %}
+
+
 
 
